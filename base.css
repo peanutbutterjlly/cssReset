@@ -1,0 +1,110 @@
+:root {
+  --font-family: font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-size: clamp(0.9rem, calc(0.4vw + 0.9rem), 1.2rem);
+  --line-height: 1.5;
+  --measure: 80ch;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:where(:root) {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+  cursor: default;
+  overflow-wrap: break-word;
+  text-rendering: optimizeSpeed;
+  -webkit-font-smoothing: antialiased;
+}
+
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+:where(body) {
+  min-height: 100vh;
+}
+
+:where(img, picture, video, canvas, svg) {
+  display: block;
+  max-width: 100%;
+}
+
+:where(input, button, textarea, select) {
+  font: inherit;
+}
+
+:where(p, h1, h2, h3, h4, h5, h6, li) {
+  max-inline-size: var(--measure);
+}
+
+:where(h1, h2, h3, h4, h5, h6) {
+  margin: 3rem 0 1.38rem;
+}
+
+:where(h1) {
+  font-size: 1.802rem;
+  margin-top: 0;
+}
+:where(h2) {
+  font-size: 1.602rem;
+}
+:where(h3) {
+  font-size: 1.424rem;
+}
+:where(h4) {
+  font-size: 1.266rem;
+}
+:where(h5) {
+  font-size: 1.125rem;
+}
+
+:where(p) {
+  margin-bottom: 1rem;
+}
+
+:where(small) {
+  font-size: 0.889rem;
+}
+
+
+a:hover,
+a:focus,
+button:hover,
+button:focus {
+  opacity: 0.75;
+}
+
+
+button:hover,
+button:focus {
+  opacity: 0.75;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
