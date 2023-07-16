@@ -1,5 +1,6 @@
 :root {
-  --font-family: font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --font-size: clamp(0.9rem, calc(0.4vw + 0.9rem), 1.2rem);
   --line-height: 1.5;
   --measure: 80ch;
@@ -75,14 +76,12 @@ html:focus-within {
   font-size: 0.889rem;
 }
 
-
 a:hover,
 a:focus,
 button:hover,
 button:focus {
   opacity: 0.75;
 }
-
 
 button:hover,
 button:focus {
