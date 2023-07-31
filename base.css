@@ -52,20 +52,20 @@ html:focus-within {
 }
 
 :where(h1) {
-  font-size: 1.802rem;
+  font-size: 4.209rem;
   margin-top: 0;
 }
 :where(h2) {
-  font-size: 1.602rem;
+  font-size: 3.157rem;
 }
 :where(h3) {
-  font-size: 1.424rem;
+  font-size: 2.369rem;
 }
 :where(h4) {
-  font-size: 1.266rem;
+  font-size: 1.777rem;
 }
 :where(h5) {
-  font-size: 1.125rem;
+  font-size: 1.333rem;
 }
 
 :where(p) {
