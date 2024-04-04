@@ -1,16 +1,4 @@
         :root {
-            /* colors */
-            /* --yellow-300: 48, 100%, 65%;
-            --yellow: 48, 89%, 61%;
-            --dark-gray-300: 220, 4%, 20%;
-            --dark-gray: 220, 4%, 15%;
-            --dark-gray-500: 220, 4%, 12%;
-
-            --primary: hsl(var(--yellow));
-            --secondary: hsl(var(--dark-gray));
-
-            --background-color: var(--secondary);
-            --color: var(--primary); */
             /* typography */
             --font-family: system-ui, sans-serif;
             --heading-font-family: ui-rounded, 'Hiragino Maru Gothic ProN', Quicksand,
@@ -27,9 +15,6 @@
             --shadow-lg: 0 20px 25px -5px rgb(0 0 0 / 0.1),
                 0 8px 10px -6px rgb(0 0 0 / 0.1);
 
-            /* background-color: var(--background-color);
-            color: var(--color); */
-            font-weight: var(--font-weight);
             font-size: var(--font-size);
             line-height: var(--line-height);
             font-family: var(--font-family);
@@ -102,11 +87,6 @@
 
         small {
             font-size: 0.889rem;
-        }
-
-        a {
-            /* color: var(--color); */
-            text-decoration: none;
         }
 
         a:hover,
