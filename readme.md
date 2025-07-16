@@ -123,8 +123,6 @@ Vintage serif with highly readable sans.
 
 ### 4. Display or Editorial Contrast
 
-Display and editorial contrast pairings combine fonts with strong visual differences — typically elegant, expressive headings with solid, readable bodies. Great for content-driven layouts, blogs, portfolios, or long-form reading.
-
 #### A. Didot (headings) + Rockwell (body)
 
 ```css
