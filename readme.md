@@ -24,49 +24,160 @@ Customize the CSS by overriding the predefined variables in your own stylesheets
 
 ## Font Pairings
 
-Here are some system font stack pairings from [Modern Font Stacks](https://modernfontstacks.com/). I currently have Rounded Sans as heading text, and System UI for body text, but feel free to change them! The CSS variables to change for fonts are --font-family and --heading-font-family, respectively.
+Here are some system font stack pairings from [Modern Font Stacks](https://modernfontstacks.com/). These use system fonts only - no downloads or external links required.
 
-### Professional and Clean
+I currently have Rounded Sans as heading text, and System UI for body text, but feel free to change them! 
 
-- **Headings:** Neo-Grotesque
-- **Body Text:** Neo-Grotesque
-- This pairing uses clean, geometric forms that are modern and straightforward, ideal for corporate or business-oriented designs.
+To update fonts in your CSS, set:
 
-### Modern and Elegant
+```css
+--heading-font-family: ...;
+--font-family: ...;
+```
 
-- **Headings:** Didone
-- **Body Text:** Slab Serif
-- Featuring high contrast in the headings with the thick and thin strokes of Didone, and balanced with the sturdy serifs of Slab Serif, this pairing suits luxury brands and elegant publications.
+### 1. Both Sans-Serif (Different Fonts)
 
-### Classic and Readable
+#### A. Inter (body) + Tahoma (headings)
 
-- **Headings:** Old Style
-- **Body Text:** Old Style
-- Both fonts are highly readable with a classic touch, making them perfect for traditional or academic documents where readability is paramount.
+```css
+--font-family: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+--heading-font-family: Tahoma, Verdana, Segoe, sans-serif;
+```
 
-### Contemporary and Dynamic
+Crisp UI text paired with tight, readable headers.
 
-- **Headings:** Geometric Humanist
-- **Body Text:** Humanist
-- Geometric Humanist offers a clean and modern geometric appearance for headings, while Humanist keeps the body text approachable and clear.
 
-### Technical and Informative
+#### B. Verdana (body) + Trebuchet MS (headings)
 
-- **Headings:** Monospace Slab Serif
-- **Body Text:** Monospace Code
-- This pairing is great for technical documents, coding environments, or any setting where a monospaced font enhances the data's structure and readability.
+```css
+--font-family: Verdana, Geneva, sans-serif;
+--heading-font-family: "Trebuchet MS", "Lucida Grande", "Segoe UI", sans-serif;
+```
 
-### Youthful and Friendly
+A classic sans body with modern, compact headings.
 
-- **Headings:** Rounded Sans
-- **Body Text:** Neo-Grotesque
-- Rounded Sans’s rounded edges make headings feel more approachable, complemented by the familiar simplicity of Neo-Grotesque for body text, suitable for informal or youth-oriented designs.
 
-### Sophisticated and Editorial
+#### C. Geometric Humanist (headings) + Humanist (body)
 
-- **Headings:** Didone
-- **Body Text:** Antique
-- Didone provides a stylish and high-impact look for headings, while Antique offers excellent readability and a slightly historic vibe for longer reads.
+```css
+--heading-font-family: "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica", sans-serif;
+--font-family: "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS", sans-serif;
+```
+
+Geometric headings with warm, readable body fonts for contemporary interfaces.
+
+
+### 2. Same Font for Both (Sans-Serif with Weight/Size Contrast)
+
+#### A. Arial
+
+```css
+--font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+--heading-font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+```
+
+Versatile and available nearly everywhere.
+
+
+#### B. System UI Stack
+
+```css
+--font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+--heading-font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+```
+
+Great for matching native OS styles.
+
+
+#### C. Neo-Grotesque
+
+```css
+--font-family: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+--heading-font-family: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+```
+
+Clean, neutral, and versatile. Perfect for startups, apps, and professional UIs.
+
+
+### 3. Serif Headings + Sans-Serif Body
+
+#### A. Georgia (headings) + Inter (body)
+
+```css
+--heading-font-family: Georgia, "Times New Roman", Times, serif;
+--font-family: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+```
+
+Sharp, traditional headings over clean UI body.
+
+
+#### B. Bookman (headings) + Verdana (body)
+
+```css
+--heading-font-family: "Bookman", "URW Bookman", "Georgia", serif;
+--font-family: Verdana, Geneva, sans-serif;
+```
+
+Vintage serif with highly readable sans.
+
+
+### 4. Display or Editorial Contrast
+
+Display and editorial contrast pairings combine fonts with strong visual differences — typically elegant, expressive headings with solid, readable bodies. Great for content-driven layouts, blogs, portfolios, or long-form reading.
+
+#### A. Didot (headings) + Rockwell (body)
+
+```css
+--heading-font-family: "Didot", "Bodoni MT", "Didoni", "Modern No. 20", serif;
+--font-family: "Rockwell", "Rockwell Nova", "Roboto Slab", "DejaVu Serif", serif;
+```
+
+Eye-catching serif headlines with slab serif body for balance.
+
+
+#### B. Palatino (headings) + Gill Sans (body)
+
+```css
+--heading-font-family: "Palatino Linotype", Palatino, serif;
+--font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+```
+
+Elegant and traditional headlines with open, soft sans-serif body.
+
+
+### 5. Monospace Combinations (Technical)
+
+#### A. Courier New (headings) + Consolas (body)
+
+```css
+--heading-font-family: "Courier New", Courier, "Nimbus Mono L", monospace;
+--font-family: Consolas, "Lucida Console", Monaco, monospace;
+```
+
+Classic mono headers with clear developer-friendly body font.
+
+
+#### B. JetBrains Mono (headings) + Andale Mono (body)
+
+```css
+--heading-font-family: "JetBrains Mono", "Courier New", monospace;
+--font-family: "Andale Mono", "Lucida Console", Monaco, monospace;
+```
+
+More modern mono headers with familiar, legible mono for content.
+
+
+### 6. Youthful and Friendly
+
+#### A. Rounded Sans (headings) + Neo-Grotesque (body)
+
+```css
+--heading-font-family: "Comfortaa", "Arial Rounded MT Bold", "Quicksand", "Verdana", sans-serif;
+--font-family: "Inter", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+```
+
+Rounded headings add a playful, inviting tone — grounded by clean, familiar sans-serif text.
+
 
 ## Acknowledgements
 
